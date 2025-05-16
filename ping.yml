@@ -1,7 +1,7 @@
 ---
-- name: ping all hosts
-  gather_facts: false
+- name: Ping all hosts
   hosts: all
+  gather_facts: no
   tasks:
-    - name: ping a host
-      icmp_ping:
+    - name: Ping
+      ansible.builtin.ping:
