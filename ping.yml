@@ -4,4 +4,4 @@
   hosts: all
   tasks:
     - name: ping a host
-      ping:
+      icmp_ping:
